@@ -307,3 +307,25 @@
     margin-bottom: -25px;
   }
 }
+
+.hub {
+  .content {
+    padding-top: 37px;
+
+    ol {
+      padding-left: 2rem;
+      counter-reset: base;
+
+      li {
+        p {
+          font-size: inherit;
+        }
+      }
+    }
+    ol > li::before {
+      counter-increment: base;
+      content: counter(base);
+      font-size: 13px;
+    }
+  }
+}
